@@ -1,0 +1,27 @@
+{
+  "name": "koa2-online",
+  "version": "1.0.0",
+  "description": "这是一个使用koa2相关技术栈搭建的一个博客，将来要上线，用于作者个人文章、生活的记录",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js --inspect-brk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkdghzh/koa2-online.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkdghzh/koa2-online/issues"
+  },
+  "homepage": "https://github.com/lkdghzh/koa2-online#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^4.5.1",
+    "nodemon": "^1.19.1"
+  }
+}
