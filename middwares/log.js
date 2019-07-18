@@ -8,7 +8,7 @@ let errorLogger = log4js.getLogger('errorCategory');
 
 const methods = ["trace", "debug", "info", "warn", "error", "fatal", "mark"];
 function initLog(app) {
-  app.use(function(ctx,next){
+  app.use(async function(ctx,next){
     // 所有方法挂载到上下文
     ctx.err={}
     methods.forEach(method => {
@@ -20,7 +20,7 @@ function initLog(app) {
         }
     });
     const start = Date.now();
-    next()
+    await next()
     const responseTime = Date.now() - start;
     ctx.info(`响应时间${responseTime}`)
     ctx.err.error(`响应时间${responseTime}`)
