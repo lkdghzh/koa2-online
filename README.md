@@ -21,5 +21,6 @@
 ## 浏览器
 ```
 node --inspect app.js
+nodemon --inspect app.js //实时更新
 打开chrome调试工具 找到node绿色六边形图标
 ```
